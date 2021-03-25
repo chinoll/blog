@@ -59,6 +59,6 @@ jobs:
         run: |
           cd blog
           cd source/_posts
-          npm d g
+          hexo d -g
           cd ../..
           npm run deploy
