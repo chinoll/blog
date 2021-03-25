@@ -53,9 +53,8 @@ jobs:
         run: |
           cd blog
           npm install hexo-deployer-git --save
+          npm install hexo-cli 
           npm install
-          cd source/_posts
-          hexo d -g
       - name: Deploy hexo
         run: |
           cd blog
