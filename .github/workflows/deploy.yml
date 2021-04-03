@@ -15,7 +15,8 @@ env:
 jobs:
   build:
     name: Set time zone
-    run: export TZ='Asia/Shanghai'
+    run: |
+      export TZ='Asia/Shanghai'
 
     name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ubuntu-latest
