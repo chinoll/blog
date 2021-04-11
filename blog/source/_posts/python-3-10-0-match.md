@@ -60,6 +60,8 @@ int main(void) {
     }
     return 0;
 }
+```
+
 python的match还可以在一条case语句里匹配多项
 ``` python
 x = int(input())
@@ -69,6 +71,7 @@ match x:
     case _:
         print("no!")
 ```
+
 下面是等价的C代码
 ```C
 #include <stdio.h>
