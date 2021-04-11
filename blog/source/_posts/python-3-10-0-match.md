@@ -60,5 +60,30 @@ int main(void) {
     }
     return 0;
 }
+python的match还可以在一条case语句里匹配多项
+``` python
+x = int(input())
+match x:
+    case 1 | 2:
+        print("input %d!" % (x))
+    case _:
+        print("no!")
 ```
-未完待续
+下面是等价的C代码
+```C
+#include <stdio.h>
+int main(void) {
+    int x;
+    scanf("%d",&x);
+    switch(x) {
+        case 1:
+        case 2:
+            printf("input %d\n",x);
+            break;
+        default:
+            printf("no!\n");
+            break;
+    }
+    return 0;
+}
+```
