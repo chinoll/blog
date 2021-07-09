@@ -4,6 +4,7 @@ date: 2021-06-15 23:44:07
 tags:
 - chisel
 - 笔记
+- scala
 ---
 # Decoupled:标准的Ready-Valid接口
 Chisel提供的常用接口之一是 `DecoupledIO`，为传输数据提供一个随时有效的接口。
