@@ -1,0 +1,46 @@
+/* Shared visual language for the existing NexT article and archive pages. */
+@font-face { font-family: Nunito; font-style: normal; font-weight: 200 1000; font-display: swap; src: url('./fonts/nunito-latin-wght-normal.woff2') format('woff2'); }
+@font-face { font-family: Pacifico; font-style: normal; font-weight: 400; font-display: swap; src: url('./fonts/pacifico-latin-400-normal.woff2') format('woff2'); }
+:root { --chino-paper: #fffefd; --chino-rail: #edf3fc; --chino-ink: #344367; --chino-muted: #64718b; --chino-accent: #566fb2; --chino-line: #d2ddf2; --chino-code: #f2f5fc; }
+:root[data-theme='dark'] { color-scheme: dark; --chino-paper: #202536; --chino-rail: #2b334a; --chino-ink: #e4eafb; --chino-muted: #b8c1d8; --chino-accent: #b4c4f2; --chino-line: #424d6b; --chino-code: #2b3248; }
+body, button, input { font-family: Nunito, 'Hiragino Sans', 'Microsoft YaHei', sans-serif; }
+body, .main-inner, .content-wrap { background: var(--chino-paper); color: var(--chino-ink); }
+a { color: var(--chino-accent); border-color: var(--chino-line); }
+a:hover { color: var(--chino-ink); border-color: var(--chino-accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--chino-accent); outline-offset: 4px; }
+.header, .footer { background: var(--chino-rail); }
+.header-inner { padding-top: 20px; padding-bottom: 20px; }
+.site-meta .brand { background: transparent; color: var(--chino-accent); }
+.site-title { font: 400 32px/1.5 Pacifico, cursive; }
+.logo-line-before, .logo-line-after { display: none; }
+.menu .menu-item a { color: var(--chino-accent); font-weight: 700; }
+.menu .menu-item a:hover, .menu .menu-item-active a { background: var(--chino-code); border-radius: 16px; }
+.posts-expand .post-title { color: var(--chino-ink); font-weight: 800; }
+.post-meta, .footer, .site-description { color: var(--chino-muted); }
+.post-body { color: var(--chino-ink); }
+.post-body h1, .post-body h2, .post-body h3, .post-body h4 { color: var(--chino-ink); }
+.post-body code, .post-body pre, .post-body .highlight { background: var(--chino-code); color: var(--chino-ink); border-radius: 6px; }
+.post-body .highlight .gutter { background: var(--chino-rail); color: var(--chino-muted); }
+.post-body table tr { background: var(--chino-paper); }
+.post-body table tr:nth-of-type(2n) { background: var(--chino-code); }
+.post-body table td, .post-body table th { border-color: var(--chino-line); }
+.post-body figure.highlight table tr { background: transparent; }
+.post-body figure.highlight .code pre { background: transparent; color: var(--chino-ink); }
+.post-body figure.highlight .gutter pre { background: var(--chino-rail); color: var(--chino-muted); }
+[data-theme='dark'] .post-body .highlight .comment, [data-theme='dark'] .post-body .highlight .quote { color: #a8b6d1; }
+[data-theme='dark'] .post-body .highlight .keyword, [data-theme='dark'] .post-body .highlight .selector-tag, [data-theme='dark'] .post-body .highlight .literal { color: #cbb7f3; }
+[data-theme='dark'] .post-body .highlight .string, [data-theme='dark'] .post-body .highlight .attr, [data-theme='dark'] .post-body .highlight .name, [data-theme='dark'] .post-body .highlight .title { color: #afd9ce; }
+[data-theme='dark'] .post-body .highlight .number, [data-theme='dark'] .post-body .highlight .built_in, [data-theme='dark'] .post-body .highlight .type { color: #eabf9d; }
+.post-body blockquote { color: var(--chino-muted); border-color: var(--chino-line); }
+.posts-expand .post-tags a { background: var(--chino-code); }
+.post-nav, .post-eof, .pagination, .post-body hr { border-color: var(--chino-line); }
+.sidebar { background: var(--chino-rail); box-shadow: none; border-right: 1px solid var(--chino-line); }
+.sidebar-inner, .site-author-name, .site-state-item-count { color: var(--chino-ink); }
+.sidebar a, .sidebar-nav li, .site-state-item-name { color: var(--chino-muted); }
+.sidebar a:hover, .sidebar-nav .sidebar-nav-active, .sidebar-toc .nav .active > a { color: var(--chino-accent); border-color: var(--chino-accent); }
+.sidebar-toggle, .back-to-top { background: #6077bc; border-radius: 10px; }
+.sidebar-toggle .toggle-line { background: #ffffff; }
+.sidebar-inner .links-of-author a:hover { background: var(--chino-code); }
+.site-state-item { border-color: var(--chino-line); }
+.pagination .page-number.current { background: var(--chino-accent); border-radius: 50%; color: var(--chino-paper); }
+@media (max-width: 767px) { .header-inner { padding-top: 12px; padding-bottom: 12px; } }

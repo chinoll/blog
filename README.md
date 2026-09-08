@@ -42,6 +42,9 @@ The original stylesheet and CC BY 3.0 license are in
 switch, and responsive behavior are customized for this site. Template
 attribution is also visible in the page footer.
 
-Manrope Variable and Lora fonts are self-hosted from Fontsource 5.3.0, with their
-SIL Open Font Licenses alongside the font files. The landscape background was
-generated for this homepage and stored locally as an optimized WebP image.
+The visual theme pairs Chino Kafuu and Tippy illustrations with ice-blue gingham,
+scalloped edges, rounded typography, and a cafe illustration for dark mode.
+Nunito Variable and Pacifico fonts are self-hosted from Fontsource, with their
+SIL Open Font Licenses alongside the font files. Illustration source links are
+in the homepage footer and `blog/source/homepage/images/SOURCES.md`. Artwork is
+stored locally as optimized WebP images, separately from the template license.
