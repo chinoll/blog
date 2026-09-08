@@ -1,10 +1,10 @@
-# Chino's homepage and blog
+# chinoll's homepage and blog
 
 Personal homepage: https://blog.chinoll.org/
 
 Programming notes: https://blog.chinoll.org/blog/
 
-The homepage introduces Chino (fufuning), with selected AI and machine-learning
+The homepage introduces chinoll (fufuning), with selected AI and machine-learning
 projects. The existing Hexo/NexT blog remains available at `/blog/`; article,
 archive, category, and tag URLs are preserved.
 
@@ -24,6 +24,9 @@ npm run server
 - `blog/source/homepage/site.js`: accessible theme switch with a saved preference.
 - `blog/source/_posts/`: existing and new blog articles.
 - `blog/_config.yml`: site URL and blog index path.
+- `blog/scripts/version-homepage-assets.js`: gives styles, scripts, and the favicon
+  content-based filenames and updates generated HTML references automatically.
+  Returning visitors therefore load the matching assets after a design update.
 
 ## Publication
 
